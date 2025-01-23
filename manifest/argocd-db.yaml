@@ -65,6 +65,12 @@ spec:
           env:
             - name: MYSQL_ROOT_PASSWORD
               value: k8s12345
+            - name: MYSQL_DATABASE
+              value: app
+            - name: MYSQL_USER
+              value: app
+            - name: MYSQL_PASSWORD
+              value: app12345
           volumeMounts:
             - mountPath: /var/lib/mysql
               name: mysqldata
